@@ -58,4 +58,17 @@ choix5.pack(padx=20, pady=(20, 5))
 optionmenu_5 = ctk.CTkOptionMenu(menu_commandes.tab("Liste de voeux"), dynamic_resizing=True,values=[""])
 optionmenu_5.pack(padx=20, pady=(20, 5))
 #choix1.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+
+
+################################################ La page "Consulter les options" #####################################################################################################
+filiere=ctk.CTkLabel(master=menu_commandes.tab("Consulter les options"), text="Choisissez votre spécialité en ING2: ", text_color="#c2620c",font=("Constantia", 25),bg_color="white",justify="left")
+filiere.pack(padx=10, pady=(20, 5))
+
+filiere_menu = ctk.CTkOptionMenu(menu_commandes.tab("Consulter les options"), dynamic_resizing=True,values=["GMI", "GMF", "GSI","SIE"])
+filiere_menu.pack(padx=10, pady=(20, 10))
+
+#if filiere_menu_values=="MI":
+print("yes")
+
+
 etudiant_menu.mainloop()
